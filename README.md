@@ -29,3 +29,11 @@ Setelah melihat kode publisher dan subscriber, ada beberapa hal yang bisa diperb
 ## Simulation slow subscriber
 
 ![](media/Bonus%20RabbitMQ%20Queue.png)
+
+## Running at least three subscribers
+
+![](media/Bonus%20Terminal%201.png)
+![](media/Bonus%20Terminal%202.png)
+![](media/Bonus%20Terminal%203.png)
+
+![](media/Bonus%20RabbitMQ%20Queue%202.png)
