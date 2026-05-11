@@ -1,0 +1,7 @@
+**a. What is AMQP?**
+
+AMQP atau Advanced Message Queuing Protocol adalah protokol standar terbuka yang digunakan untuk komunikasi antar aplikasi melalui perantara pesan atau message broker. Protokol ini mendefinisikan bagaimana pesan diformat, dikirim, dan dikonfirmasi penerimaannya antara satu aplikasi dengan aplikasi lain. AMQP dirancang agar aplikasi yang ditulis dalam bahasa pemrograman berbeda tetap bisa berkomunikasi secara andal. Protokol ini juga mendukung pengiriman pesan secara asynchronous sehingga pengirim tidak perlu menunggu penerima selesai memproses pesan. Dalam tutorial ini, AMQP digunakan sebagai protokol yang menghubungkan publisher dan subscriber melalui RabbitMQ.
+
+**b. What does `guest:guest@localhost:5672` mean?**
+
+String `guest:guest@localhost:5672` adalah URL koneksi yang digunakan oleh publisher maupun subscriber untuk terhubung ke RabbitMQ. `guest` yang pertama adalah username yang digunakan untuk autentikasi ke RabbitMQ, sedangkan `guest` yang kedua adalah password dari username tersebut. Keduanya merupakan kredensial bawaan yang sudah disediakan oleh RabbitMQ secara default tanpa perlu konfigurasi tambahan. `localhost` menunjukkan bahwa server RabbitMQ berjalan di mesin yang sama dengan aplikasi kita, bukan di server eksternal. Angka `5672` adalah nomor port yang digunakan RabbitMQ untuk menerima koneksi menggunakan protokol AMQP.
