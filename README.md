@@ -23,3 +23,9 @@ Ketika menjalankan tiga subscriber secara bersamaan, terlihat bahwa pesan dari p
 ## Possible improvements
 
 Setelah melihat kode publisher dan subscriber, ada beberapa hal yang bisa diperbaiki. Pertama, pada subscriber tidak ada mekanisme reconnect otomatis jika koneksi ke RabbitMQ terputus, sehingga subscriber akan berhenti bekerja sepenuhnya jika koneksi gagal. Kedua, pada publisher tidak ada konfirmasi bahwa pesan berhasil diterima oleh broker, sehingga jika pengiriman gagal tidak ada penanganan error yang memadai. Ketiga, nilai hardcoded seperti URL koneksi amqp://guest:guest@localhost:5672 sebaiknya dipindahkan ke file konfigurasi atau environment variable agar lebih fleksibel saat di-deploy di environment yang berbeda. Keempat, data pengguna pada publisher juga masih hardcoded langsung di dalam fungsi main, yang seharusnya bisa dibaca dari input eksternal agar lebih dinamis.
+
+# Bonus
+
+## Simulation slow subscriber
+
+![](media/Bonus%20RabbitMQ%20Queue.png)
